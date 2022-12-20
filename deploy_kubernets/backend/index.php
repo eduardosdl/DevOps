@@ -11,7 +11,6 @@ $comentario = $_POST["comentario"];
 
 $query = "INSERT INTO mensagens(id, nome, email, comentario) VALUES ('$id', '$nome', '$email', '$comentario')";
 
-
 if ($link->query($query) === TRUE) {
   echo "New record created successfully";
 } else {

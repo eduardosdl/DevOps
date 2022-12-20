@@ -1,18 +1,9 @@
 <?php
-$servername = "connection-mysql";
-$username = "root";
-$password = "Senha123";
-$database = "meubanco";
-
-// Criar conexão
-
-
-$link = new mysqli($servername, $username, $password, $database);
+$link = new mysqli("connection-mysql", "root", "senha123", "meubanco");
 
 /* check connection */
 if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
 }
-
 ?>
